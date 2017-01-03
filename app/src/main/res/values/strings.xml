@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Apps ESIEA</string>
+    <string name="button_text">Commander</string>
+    <string name="button_next">Notif ;)</string>
+    <string name="Hello_World">Bière Master !</string>
+    <string name="from_date">Début</string>
+    <string name="to_date">Fin</string>
+    <string name="droite">Droite</string>
+    <string name="ok">Ok</string>
+    <string name="gauche">Gauche</string>
+    <string name="notification_desc">Cliquez sur moi je suis une notification</string>
+</resources>

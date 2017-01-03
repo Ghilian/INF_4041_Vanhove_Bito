@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pj="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <Button
+        android:text="@string/droite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonD"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/gauche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BoutonG"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/buttonD"
+        android:layout_toStartOf="@+id/buttonD" />
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textClock"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColorLink="@android:color/white"
+        android:layout_toEndOf="@+id/buttonO"
+        android:textSize="30sp"
+        android:layout_toRightOf="@+id/buttonO"
+        android:textAlignment="textEnd"
+        android:gravity="right" />
+
+    <org.esiea.vanhove.inf_4041_vanhove.controls.Carousel
+        android:layout_width="fill_parent"
+        android:layout_height="219dp"
+        android:id="@+id/carousel"
+        pj:UseReflection="true"
+        pj:Items="@array/entries"
+        pj:Names="@array/names"
+        pj:SelectedItem="0"
+        android:animationDuration="200"
+        android:layout_below="@+id/textClock"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Choix de la bière"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView" />
+
+</RelativeLayout>
